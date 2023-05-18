@@ -28,17 +28,17 @@ Public Class Form3
 
         arch.Close()
 
-        If encontrado Then
-            MessageBox.Show("Coincidencia encontrada: " & buscarNombre & " " & buscarApellido & ", " & buscarCodigo)
-            Panel4.Visible = False
-            Panel5.Visible = True
+        If encontrado Then ' Concidencia de codigo
+            MessageBox.Show("Trabajador encontrado: " & buscarNombre & " " & buscarApellido & ", " & buscarCodigo)
+            Panel4.Visible = False ' esconder panel
+            Panel5.Visible = True ' mostrar panel
             TextBox8.Text = buscarCodigo
             TextBox5.Text = buscarNombre & " " & buscarApellido
             TextBox6.Text = DateTime.Now.ToString("dd/MM/yyyy")
-            TextBox8.Enabled = False
-            TextBox5.Enabled = False
+            TextBox8.Enabled = False ' Deshabilitar 
+            TextBox5.Enabled = False ' Deshabilitar
         Else
-            MessageBox.Show("No se encontró coincidencia: " & buscarNombre & " " & buscarApellido & ", " & buscarCodigo)
+            MessageBox.Show("Trabajador no encontrado : " & buscarNombre & " " & buscarApellido & ", " & buscarCodigo)
             Panel4.Visible = True
         End If
     End Sub
@@ -56,4 +56,41 @@ Public Class Form3
         Panel5.Visible = False
         Panel4.Visible = True
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ' funcion guardar cheque
+        GenerarCheque()
+    End Sub
+
+    Private Sub GenerarCheque()
+        'asignar valores
+        Dim id As String = Guid.NewGuid().ToString()
+        Dim nombre As String = TextBox5.Text.Trim()
+        Dim fecha As String = TextBox6.Text.Trim()
+        Dim monto As String = TextBox4.Text.Trim()
+        Dim firma As String = TextBox7.Text.Trim()
+        Dim Nreferencia As String = TextBox10.Text.Trim()
+        Dim NotaPago As String = TextBox11.Text.Trim()
+        Dim codEmpleado As String = TextBox8.Text.Trim()
+
+        'Crear cheque y guardar
+        Using openFile As New StreamWriter("cheques.txt", True)
+            'abrir y escribir lineas
+            openFile.WriteLine(id)
+            openFile.WriteLine(nombre)
+            openFile.WriteLine(fecha)
+            openFile.WriteLine(monto)
+            openFile.WriteLine(firma)
+            openFile.WriteLine(Nreferencia)
+            openFile.WriteLine(NotaPago)
+            openFile.WriteLine(codEmpleado)
+        End Using
+
+        Dim form5 As New Form5
+        form5.Show()
+        Me.Hide()
+
+
+    End Sub
+
 End Class

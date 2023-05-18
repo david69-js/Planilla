@@ -188,9 +188,9 @@ Partial Class Form3
         Label9.AutoSize = True
         Label9.Location = New Point(18, 3)
         Label9.Name = "Label9"
-        Label9.Size = New Size(183, 15)
+        Label9.Size = New Size(181, 15)
         Label9.TabIndex = 8
-        Label9.Text = "Nombre Completo del trabajador"
+        Label9.Text = "Nombre completo del trabajador"
         ' 
         ' TextBox4
         ' 

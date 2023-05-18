@@ -126,10 +126,12 @@ Partial Class Form2
         ' 
         ' TextBox5
         ' 
+        TextBox5.Enabled = False
         TextBox5.Location = New Point(296, 136)
         TextBox5.Name = "TextBox5"
         TextBox5.Size = New Size(100, 23)
         TextBox5.TabIndex = 11
+        TextBox5.UseWaitCursor = True
         ' 
         ' Label7
         ' 
@@ -158,6 +160,7 @@ Partial Class Form2
         ' 
         ' TextBox7
         ' 
+        TextBox7.Enabled = False
         TextBox7.Location = New Point(458, 80)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(100, 23)

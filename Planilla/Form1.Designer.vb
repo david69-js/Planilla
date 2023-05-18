@@ -26,6 +26,7 @@ Partial Class Form1
         Button1 = New Button()
         Button2 = New Button()
         Button3 = New Button()
+        Button4 = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -64,11 +65,21 @@ Partial Class Form1
         Button3.Text = "Generar cheque"
         Button3.UseVisualStyleBackColor = True
         ' 
+        ' Button4
+        ' 
+        Button4.Location = New Point(564, 110)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(141, 23)
+        Button4.TabIndex = 4
+        Button4.Text = "Ver historico"
+        Button4.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
@@ -83,4 +94,5 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
 End Class

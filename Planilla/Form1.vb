@@ -20,4 +20,10 @@
         form4.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim form5 As New Form5
+        form5.Show()
+        Me.Hide()
+    End Sub
 End Class
