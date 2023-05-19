@@ -36,7 +36,7 @@ Partial Class Form1
         Label1.Name = "Label1"
         Label1.Size = New Size(80, 15)
         Label1.TabIndex = 0
-        Label1.Text = "Proyecto final"
+        Label1.Text = "PLANILLA DE TRABAJO"
         ' 
         ' Button1
         ' 
