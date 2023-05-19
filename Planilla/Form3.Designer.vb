@@ -3,7 +3,7 @@ Partial Class Form3
     Inherits MaterialSkin.Controls.MaterialForm
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form3
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form3))
         Label1 = New Label()
@@ -75,7 +75,7 @@ Partial Class Form3
         Label1.Name = "Label1"
         Label1.Size = New Size(297, 38)
         Label1.TabIndex = 0
-        Label1.Text = "GENERAR CHEQUE"' 
+        Label1.Text = "GENERAR CHEQUE" ' 
         ' TextBox1
         ' 
         TextBox1.Location = New Point(31, 54)
@@ -90,7 +90,7 @@ Partial Class Form3
         Label2.Name = "Label2"
         Label2.Size = New Size(85, 15)
         Label2.TabIndex = 2
-        Label2.Text = "Ingrese codigo"' 
+        Label2.Text = "Ingrese codigo" ' 
         ' Label3
         ' 
         Label3.AutoSize = True
@@ -98,7 +98,7 @@ Partial Class Form3
         Label3.Name = "Label3"
         Label3.Size = New Size(90, 15)
         Label3.TabIndex = 3
-        Label3.Text = "Ingrese nombre"' 
+        Label3.Text = "Ingrese nombre" ' 
         ' TextBox2
         ' 
         TextBox2.Location = New Point(31, 115)
@@ -114,7 +114,7 @@ Partial Class Form3
         Label4.Name = "Label4"
         Label4.Size = New Size(124, 17)
         Label4.TabIndex = 5
-        Label4.Text = "Buscar trabajador"' 
+        Label4.Text = "Buscar trabajador" ' 
         ' Panel1
         ' 
         Panel1.Controls.Add(Button1)
@@ -152,7 +152,7 @@ Partial Class Form3
         Label5.Name = "Label5"
         Label5.Size = New Size(97, 15)
         Label5.TabIndex = 5
-        Label5.Text = "Ingrese Apellidos"' 
+        Label5.Text = "Ingrese Apellidos" ' 
         ' Panel2
         ' 
         Panel2.Controls.Add(TextBox7)
@@ -185,7 +185,7 @@ Partial Class Form3
         Label11.Name = "Label11"
         Label11.Size = New Size(122, 17)
         Label11.TabIndex = 9
-        Label11.Text = "Firma Empleador"' 
+        Label11.Text = "Firma Empleador" ' 
         ' Label9
         ' 
         Label9.AutoSize = True
@@ -194,7 +194,7 @@ Partial Class Form3
         Label9.Name = "Label9"
         Label9.Size = New Size(216, 17)
         Label9.TabIndex = 8
-        Label9.Text = "Nombre Completo del trabajador"' 
+        Label9.Text = "Nombre Completo del trabajador" ' 
         ' TextBox4
         ' 
         TextBox4.Font = New Font("Elephant", 8.999999F, FontStyle.Regular, GraphicsUnit.Point)
@@ -211,7 +211,7 @@ Partial Class Form3
         Label6.Name = "Label6"
         Label6.Size = New Size(49, 17)
         Label6.TabIndex = 5
-        Label6.Text = "Monto"' 
+        Label6.Text = "Monto" ' 
         ' Label7
         ' 
         Label7.AutoSize = True
@@ -245,7 +245,7 @@ Partial Class Form3
         Label8.Name = "Label8"
         Label8.Size = New Size(116, 17)
         Label8.TabIndex = 3
-        Label8.Text = "Fecha de emision"' 
+        Label8.Text = "Fecha de emision" ' 
         ' Label10
         ' 
         Label10.AutoSize = True
@@ -254,7 +254,7 @@ Partial Class Form3
         Label10.Name = "Label10"
         Label10.Size = New Size(178, 17)
         Label10.TabIndex = 8
-        Label10.Text = "Datos para generar cheque"' 
+        Label10.Text = "Datos para generar cheque" ' 
         ' Panel3
         ' 
         Panel3.Controls.Add(TextBox8)
@@ -287,7 +287,7 @@ Partial Class Form3
         Label12.Name = "Label12"
         Label12.Size = New Size(118, 17)
         Label12.TabIndex = 9
-        Label12.Text = "Codigo Empleado"' 
+        Label12.Text = "Codigo Empleado" ' 
         ' Button2
         ' 
         Button2.BackColor = Color.RoyalBlue
@@ -309,7 +309,7 @@ Partial Class Form3
         Label13.Name = "Label13"
         Label13.Size = New Size(153, 17)
         Label13.TabIndex = 8
-        Label13.Text = "Numero de Referencia"' 
+        Label13.Text = "Numero de Referencia" ' 
         ' Label15
         ' 
         Label15.AutoSize = True
@@ -344,7 +344,7 @@ Partial Class Form3
         Label16.Name = "Label16"
         Label16.Size = New Size(89, 17)
         Label16.TabIndex = 3
-        Label16.Text = "Nota de pago"' 
+        Label16.Text = "Nota de pago" ' 
         ' Panel4
         ' 
         Panel4.Controls.Add(Label4)
@@ -389,7 +389,7 @@ Partial Class Form3
         ' 
         ' Form3
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(785, 523)
         Controls.Add(PictureBox1)

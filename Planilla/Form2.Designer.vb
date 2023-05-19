@@ -55,7 +55,8 @@ Partial Class Form2
         Label1.Name = "Label1"
         Label1.Size = New Size(493, 38)
         Label1.TabIndex = 0
-        Label1.Text = "INGRESE UN NUEVO EMPLEADO"' 
+        Label1.Text = "INGRESE UN NUEVO EMPLEADO"
+        ' 
         ' Label2
         ' 
         Label2.AutoSize = True
@@ -64,7 +65,8 @@ Partial Class Form2
         Label2.Name = "Label2"
         Label2.Size = New Size(71, 21)
         Label2.TabIndex = 2
-        Label2.Text = "Codigo"' 
+        Label2.Text = "Codigo"
+        ' 
         ' TextBox1
         ' 
         TextBox1.Location = New Point(227, 133)
@@ -80,7 +82,8 @@ Partial Class Form2
         Label3.Name = "Label3"
         Label3.Size = New Size(89, 21)
         Label3.TabIndex = 4
-        Label3.Text = "Nombres"' 
+        Label3.Text = "Nombres"
+        ' 
         ' Label4
         ' 
         Label4.AutoSize = True
@@ -89,7 +92,8 @@ Partial Class Form2
         Label4.Name = "Label4"
         Label4.Size = New Size(91, 21)
         Label4.TabIndex = 5
-        Label4.Text = "Apellidos"' 
+        Label4.Text = "Apellidos"
+        ' 
         ' TextBox2
         ' 
         TextBox2.Location = New Point(224, 189)
@@ -112,7 +116,8 @@ Partial Class Form2
         Label5.Name = "Label5"
         Label5.Size = New Size(69, 21)
         Label5.TabIndex = 8
-        Label5.Text = "Sueldo"' 
+        Label5.Text = "Sueldo"
+        ' 
         ' TextBox4
         ' 
         TextBox4.Location = New Point(465, 133)
@@ -128,7 +133,8 @@ Partial Class Form2
         Label6.Name = "Label6"
         Label6.Size = New Size(60, 21)
         Label6.TabIndex = 10
-        Label6.Text = "IGSS"' 
+        Label6.Text = "IGSS"
+        ' 
         ' TextBox5
         ' 
         TextBox5.Location = New Point(465, 189)
@@ -144,7 +150,8 @@ Partial Class Form2
         Label7.Name = "Label7"
         Label7.Size = New Size(111, 21)
         Label7.TabIndex = 12
-        Label7.Text = "Descuentos"' 
+        Label7.Text = "Descuentos"
+        ' 
         ' TextBox6
         ' 
         TextBox6.Location = New Point(465, 244)
@@ -160,7 +167,8 @@ Partial Class Form2
         Label8.Name = "Label8"
         Label8.Size = New Size(79, 21)
         Label8.TabIndex = 14
-        Label8.Text = "Liquido"' 
+        Label8.Text = "Liquido"
+        ' 
         ' TextBox7
         ' 
         TextBox7.Location = New Point(627, 133)

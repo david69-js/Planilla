@@ -41,7 +41,8 @@ Partial Class Form1
         Label1.Name = "Label1"
         Label1.Size = New Size(362, 38)
         Label1.TabIndex = 0
-        Label1.Text = "PLANILLA DE TRABAJO"' 
+        Label1.Text = "PLANILLA DE TRABAJO"
+        ' 
         ' Button1
         ' 
         Button1.BackColor = Color.RoyalBlue
@@ -93,7 +94,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(763, 328)
         Controls.Add(PictureBox1)
