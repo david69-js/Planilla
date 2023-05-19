@@ -2,7 +2,7 @@
 
 Public Class Form4
 
-    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Form4_Load(sender As Object, e As EventArgs)
         If Not File.Exists("employe.txt") Then
             Dim arch As New StreamWriter("employe.txt")
             arch.Close()
@@ -22,7 +22,7 @@ Public Class Form4
         End If
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         Dim form1 As New Form1
         form1.Show()
         Me.Hide()

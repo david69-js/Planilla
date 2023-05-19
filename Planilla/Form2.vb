@@ -104,7 +104,7 @@ Public Class Form2
         Me.Hide()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         Dim form4 As New Form4
         form4.Show()
         Me.Hide()

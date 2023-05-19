@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
-    Inherits System.Windows.Forms.Form
+    Inherits MaterialSkin.Controls.MaterialForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -22,48 +22,76 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         Label1 = New Label()
         Button1 = New Button()
         Button2 = New Button()
         Button3 = New Button()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Button4 = New Button()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(346, 21)
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Britannic Bold", 26.25F, FontStyle.Underline, GraphicsUnit.Point)
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(226, 20)
         Label1.Name = "Label1"
-        Label1.Size = New Size(80, 15)
+        Label1.Size = New Size(362, 38)
         Label1.TabIndex = 0
         Label1.Text = "PLANILLA DE TRABAJO"
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(28, 110)
+        Button1.BackColor = Color.RoyalBlue
+        Button1.Cursor = Cursors.Hand
+        Button1.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.ForeColor = Color.White
+        Button1.Location = New Point(198, 128)
         Button1.Name = "Button1"
-        Button1.Size = New Size(75, 23)
+        Button1.Size = New Size(96, 68)
         Button1.TabIndex = 1
         Button1.Text = "Ver planilla"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(129, 110)
+        Button2.BackColor = Color.RoyalBlue
+        Button2.Cursor = Cursors.Hand
+        Button2.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Button2.ForeColor = Color.White
+        Button2.Location = New Point(304, 128)
         Button2.Name = "Button2"
-        Button2.Size = New Size(226, 23)
+        Button2.Size = New Size(247, 68)
         Button2.TabIndex = 2
         Button2.Text = "Ingresar nuevos empleados"
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(387, 110)
+        Button3.BackColor = Color.RoyalBlue
+        Button3.Cursor = Cursors.Hand
+        Button3.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Button3.ForeColor = Color.White
+        Button3.Location = New Point(557, 128)
         Button3.Name = "Button3"
-        Button3.Size = New Size(141, 23)
+        Button3.Size = New Size(162, 68)
         Button3.TabIndex = 3
         Button3.Text = "Generar cheque"
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(6, 92)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(186, 152)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox1.TabIndex = 4
+        PictureBox1.TabStop = False
         ' 
         ' Button4
         ' 
@@ -76,8 +104,10 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
         AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(763, 328)
+        Controls.Add(PictureBox1)
         ClientSize = New Size(800, 450)
         Controls.Add(Button4)
         Controls.Add(Button3)
@@ -85,7 +115,9 @@ Partial Class Form1
         Controls.Add(Button1)
         Controls.Add(Label1)
         Name = "Form1"
-        Text = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "PROYECTO FINAL"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -95,4 +127,5 @@ Partial Class Form1
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
