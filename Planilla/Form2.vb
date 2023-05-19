@@ -11,9 +11,36 @@ Public Class Form2
         Dim codigo As String = TextBox1.Text.Trim()
         Dim nombres As String = TextBox2.Text.Trim()
         Dim apellidos As String = TextBox3.Text.Trim()
-        Dim sueldo As Decimal = Decimal.Parse(TextBox4.Text.Trim())
+        Dim sueldo As Decimal
+        Dim descuentos As Decimal
+
+        ' Validar que los campos no estén vacíos y sean valores numéricos
+        If String.IsNullOrEmpty(codigo) Then
+            MessageBox.Show("El campo 'código' no puede estar vacío.")
+            Return
+        End If
+
+        If String.IsNullOrEmpty(nombres) Then
+            MessageBox.Show("El campo 'nombres' no puede estar vacío.")
+            Return
+        End If
+
+        If String.IsNullOrEmpty(apellidos) Then
+            MessageBox.Show("El campo 'apellidos' no puede estar vacío.")
+            Return
+        End If
+
+        If Not Decimal.TryParse(TextBox4.Text.Trim(), sueldo) Then
+            MessageBox.Show("El campo 'sueldo' debe ser un valor numérico válido.")
+            Return
+        End If
+
+        If Not Decimal.TryParse(TextBox6.Text.Trim(), descuentos) Then
+            MessageBox.Show("El campo 'descuentos' debe ser un valor numérico válido.")
+            Return
+        End If
+
         Dim igss As Decimal = sueldo * 0.0483 ' Calcula el IGSS como un porcentaje del sueldo
-        Dim descuentos As Decimal = Decimal.Parse(TextBox6.Text.Trim())
         Dim sueldoLiquido As Decimal = sueldo - igss - descuentos
 
         TextBox5.Text = igss.ToString() ' Muestra el valor del IGSS en TextBox5
@@ -45,7 +72,7 @@ Public Class Form2
         End Using
 
         If encontrado Then
-            MessageBox.Show("No se pudo guardar la información. Ya existe un empleado con el mismo código")
+            MessageBox.Show("No se pudo guardar la información. Ya existe un empleado con el mismo código.")
         Else
             ' Crear nuevo trabajador
             Using openFile As New StreamWriter("employe.txt", True)
@@ -59,8 +86,13 @@ Public Class Form2
                 openFile.WriteLine(liquido)
             End Using
             MessageBox.Show("La información se ha guardado correctamente.")
+
+            Dim form4 As New Form4
+            form4.Show()
+            Me.Hide()
         End If
     End Sub
+
 
     Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
         CalcularSueldoLiquido()
@@ -104,7 +136,7 @@ Public Class Form2
         Me.Hide()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim form4 As New Form4
         form4.Show()
         Me.Hide()

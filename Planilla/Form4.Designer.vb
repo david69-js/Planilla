@@ -45,7 +45,8 @@ Partial Class Form4
         Label1.Name = "Label1"
         Label1.Size = New Size(487, 41)
         Label1.TabIndex = 0
-        Label1.Text = "PLANILLA DE TRABAJADORES"' 
+        Label1.Text = "PLANILLA DE TRABAJADORES"
+        ' 
         ' DataGridView1
         ' 
         DataGridView1.AllowUserToDeleteRows = False

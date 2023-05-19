@@ -138,7 +138,6 @@ Partial Class Form2
         ' TextBox5
         ' 
         TextBox5.Enabled = False
-        TextBox5.Location = New Point(296, 136)
         TextBox5.Location = New Point(465, 189)
         TextBox5.Name = "TextBox5"
         TextBox5.Size = New Size(100, 23)
@@ -175,7 +174,6 @@ Partial Class Form2
         ' TextBox7
         ' 
         TextBox7.Enabled = False
-        TextBox7.Location = New Point(458, 80)
         TextBox7.Location = New Point(627, 133)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(100, 23)
@@ -229,7 +227,7 @@ Partial Class Form2
         ' 
         ' Form2
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
         Controls.Add(PictureBox1)
