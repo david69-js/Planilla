@@ -49,48 +49,48 @@ Partial Class Form2
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Britannic Bold", 26.25F, FontStyle.Underline, GraphicsUnit.Point)
+        Label1.Font = New Font("Microsoft Sans Serif", 26.25F, FontStyle.Underline, GraphicsUnit.Point)
         Label1.ForeColor = Color.White
         Label1.Location = New Point(158, 25)
         Label1.Name = "Label1"
-        Label1.Size = New Size(493, 38)
+        Label1.Size = New Size(564, 39)
         Label1.TabIndex = 0
         Label1.Text = "INGRESE UN NUEVO EMPLEADO"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Label2.Location = New Point(224, 113)
         Label2.Name = "Label2"
-        Label2.Size = New Size(71, 21)
+        Label2.Size = New Size(65, 20)
         Label2.TabIndex = 2
         Label2.Text = "Codigo"
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(227, 133)
+        TextBox1.Location = New Point(224, 133)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(100, 23)
+        TextBox1.Size = New Size(139, 23)
         TextBox1.TabIndex = 3
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.Location = New Point(224, 171)
         Label3.Name = "Label3"
-        Label3.Size = New Size(89, 21)
+        Label3.Size = New Size(80, 20)
         Label3.TabIndex = 4
         Label3.Text = "Nombres"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Label4.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Label4.Location = New Point(224, 226)
         Label4.Name = "Label4"
-        Label4.Size = New Size(91, 21)
+        Label4.Size = New Size(82, 20)
         Label4.TabIndex = 5
         Label4.Text = "Apellidos"
         ' 
@@ -98,23 +98,23 @@ Partial Class Form2
         ' 
         TextBox2.Location = New Point(224, 189)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(100, 23)
+        TextBox2.Size = New Size(139, 23)
         TextBox2.TabIndex = 6
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(227, 244)
+        TextBox3.Location = New Point(224, 244)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(100, 23)
+        TextBox3.Size = New Size(139, 23)
         TextBox3.TabIndex = 7
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Label5.Location = New Point(465, 113)
         Label5.Name = "Label5"
-        Label5.Size = New Size(69, 21)
+        Label5.Size = New Size(65, 20)
         Label5.TabIndex = 8
         Label5.Text = "Sueldo"
         ' 
@@ -128,10 +128,10 @@ Partial Class Form2
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Label6.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Label6.Location = New Point(465, 171)
         Label6.Name = "Label6"
-        Label6.Size = New Size(60, 21)
+        Label6.Size = New Size(53, 20)
         Label6.TabIndex = 10
         Label6.Text = "IGSS"
         ' 
@@ -147,10 +147,10 @@ Partial Class Form2
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Label7.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Label7.Location = New Point(465, 226)
         Label7.Name = "Label7"
-        Label7.Size = New Size(111, 21)
+        Label7.Size = New Size(105, 20)
         Label7.TabIndex = 12
         Label7.Text = "Descuentos"
         ' 
@@ -164,10 +164,10 @@ Partial Class Form2
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Label8.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Label8.Location = New Point(627, 113)
         Label8.Name = "Label8"
-        Label8.Size = New Size(79, 21)
+        Label8.Size = New Size(67, 20)
         Label8.TabIndex = 14
         Label8.Text = "Liquido"
         ' 
@@ -181,21 +181,24 @@ Partial Class Form2
         ' 
         ' Button1
         ' 
-        Button1.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.BackColor = Color.RoyalBlue
+        Button1.Cursor = Cursors.Hand
+        Button1.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.ForeColor = Color.White
         Button1.Location = New Point(627, 194)
         Button1.Name = "Button1"
         Button1.Size = New Size(100, 73)
         Button1.TabIndex = 16
         Button1.Text = "Agregar"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
         Button2.BackColor = Color.RoyalBlue
         Button2.Cursor = Cursors.Hand
-        Button2.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Button2.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Button2.ForeColor = Color.White
-        Button2.Location = New Point(592, 331)
+        Button2.Location = New Point(601, 331)
         Button2.Name = "Button2"
         Button2.Size = New Size(135, 52)
         Button2.TabIndex = 17
@@ -206,7 +209,7 @@ Partial Class Form2
         ' 
         Button3.BackColor = Color.RoyalBlue
         Button3.Cursor = Cursors.Hand
-        Button3.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Button3.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Button3.ForeColor = Color.White
         Button3.Location = New Point(227, 331)
         Button3.Name = "Button3"
@@ -218,7 +221,7 @@ Partial Class Form2
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(9, 124)
+        PictureBox1.Location = New Point(15, 113)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(185, 178)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage

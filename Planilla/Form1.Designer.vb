@@ -28,19 +28,19 @@ Partial Class Form1
         Button2 = New Button()
         Button3 = New Button()
         PictureBox1 = New PictureBox()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Button4 = New Button()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Britannic Bold", 26.25F, FontStyle.Underline, GraphicsUnit.Point)
+        Label1.Font = New Font("Microsoft Sans Serif", 26.25F, FontStyle.Underline, GraphicsUnit.Point)
         Label1.ForeColor = Color.White
         Label1.Location = New Point(226, 20)
         Label1.Name = "Label1"
-        Label1.Size = New Size(362, 38)
+        Label1.Size = New Size(403, 39)
         Label1.TabIndex = 0
         Label1.Text = "PLANILLA DE TRABAJO"
         ' 
@@ -48,7 +48,7 @@ Partial Class Form1
         ' 
         Button1.BackColor = Color.RoyalBlue
         Button1.Cursor = Cursors.Hand
-        Button1.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Button1.ForeColor = Color.White
         Button1.Location = New Point(198, 128)
         Button1.Name = "Button1"
@@ -61,7 +61,7 @@ Partial Class Form1
         ' 
         Button2.BackColor = Color.RoyalBlue
         Button2.Cursor = Cursors.Hand
-        Button2.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Button2.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Button2.ForeColor = Color.White
         Button2.Location = New Point(304, 128)
         Button2.Name = "Button2"
@@ -74,7 +74,7 @@ Partial Class Form1
         ' 
         Button3.BackColor = Color.RoyalBlue
         Button3.Cursor = Cursors.Hand
-        Button3.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Button3.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Button3.ForeColor = Color.White
         Button3.Location = New Point(557, 128)
         Button3.Name = "Button3"
@@ -95,20 +95,24 @@ Partial Class Form1
         ' 
         ' Button4
         ' 
-        Button4.Location = New Point(564, 110)
+        Button4.BackColor = Color.RoyalBlue
+        Button4.Cursor = Cursors.Hand
+        Button4.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Button4.ForeColor = Color.White
+        Button4.Location = New Point(557, 311)
         Button4.Name = "Button4"
-        Button4.Size = New Size(141, 23)
+        Button4.Size = New Size(162, 38)
         Button4.TabIndex = 4
-        Button4.Text = "Ver historico"
-        Button4.UseVisualStyleBackColor = True
+        Button4.Text = "VER HISTORICO"
+        Button4.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(763, 328)
+        BackColor = Color.White
+        ClientSize = New Size(784, 450)
         Controls.Add(PictureBox1)
-        ClientSize = New Size(800, 450)
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)

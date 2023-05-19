@@ -38,19 +38,23 @@ Partial Class Form5
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(795, 415)
+        Button1.BackColor = Color.RoyalBlue
+        Button1.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.ForeColor = Color.White
+        Button1.Location = New Point(735, 386)
         Button1.Name = "Button1"
-        Button1.Size = New Size(131, 23)
+        Button1.Size = New Size(176, 52)
         Button1.TabIndex = 1
         Button1.Text = "Regresar al menu"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' MainPanel
         ' 
         MainPanel.AutoScroll = True
+        MainPanel.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point)
         MainPanel.Location = New Point(12, 29)
         MainPanel.Name = "MainPanel"
-        MainPanel.Size = New Size(923, 380)
+        MainPanel.Size = New Size(923, 342)
         MainPanel.TabIndex = 2
         ' 
         ' Form5

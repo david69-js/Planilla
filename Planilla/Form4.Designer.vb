@@ -39,24 +39,27 @@ Partial Class Form4
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Britannic Bold", 27.75F, FontStyle.Underline, GraphicsUnit.Point)
+        Label1.Font = New Font("Microsoft Sans Serif", 27.75F, FontStyle.Underline, GraphicsUnit.Point)
         Label1.ForeColor = Color.White
         Label1.Location = New Point(189, 23)
         Label1.Name = "Label1"
-        Label1.Size = New Size(487, 41)
+        Label1.Size = New Size(566, 42)
         Label1.TabIndex = 0
         Label1.Text = "PLANILLA DE TRABAJADORES"
         ' 
         ' DataGridView1
         ' 
         DataGridView1.AllowUserToDeleteRows = False
+        DataGridView1.BackgroundColor = Color.CornflowerBlue
+        DataGridView1.BorderStyle = BorderStyle.Fixed3D
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Columns.AddRange(New DataGridViewColumn() {Codigo, Nombres, Apellidos, Sueldo, IGSS, Descuentos, Liquido})
+        DataGridView1.GridColor = Color.RoyalBlue
         DataGridView1.Location = New Point(51, 80)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.ReadOnly = True
         DataGridView1.RowTemplate.Height = 25
-        DataGridView1.Size = New Size(745, 373)
+        DataGridView1.Size = New Size(736, 373)
         DataGridView1.TabIndex = 2
         ' 
         ' Codigo
@@ -105,7 +108,7 @@ Partial Class Form4
         ' 
         Button3.BackColor = Color.RoyalBlue
         Button3.Cursor = Cursors.Hand
-        Button3.Font = New Font("Elephant", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
+        Button3.Font = New Font("Microsoft Sans Serif", 11.9999981F, FontStyle.Bold, GraphicsUnit.Point)
         Button3.ForeColor = Color.White
         Button3.Location = New Point(632, 471)
         Button3.Name = "Button3"
